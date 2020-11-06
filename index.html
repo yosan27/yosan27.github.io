@@ -1,121 +1,165 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WPU Merch</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
 </head>
 
 <body>
-
-    <div class="container">
-
-        <header class="header" >
-
-            <div class="hero">
-                <h2 class="heading">WPU Merch Shop</h2>
-                <p class="sub-heading">Hoodie & T-Shirt</p>
-            </div>
-
-            <div class="features feature-1">
-                <h4 class="price">IDR 250K</h4>
-                <p class="item">Hoodie</p>
-            </div>
-
-            <div class="features feature-2">
-                <h4 class="price">IDR 150K</h4>
-                <p class="item">T-Shirt</p>
-            </div>
-
-        </header>
-
-        <nav class="menu">
-
-            <div class="menu-toggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="brand">
-                <h1>WPU Merch</h1>
-            </div>
-
-            <ul class="menu-list">
-                <li><a href="">Home</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Gallery</a></li>
-            </ul>
-
-        </nav>
-
-        <section class="services">
-            <div class="service">
-                <div class="icon">T</div>
-                <h3>Tutorial</h3>
-                <p>
-                    Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    Hello Hello Hello Hello Hello
-                </p>
-            </div>
-
-            <div class="service">
-                <div class="icon">O</div>
-                <h3>Online Course</h3>
-                <p>
-                    Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    Hello Hello Hello Hello Hello
-                </p>
-            </div>
-
-            <div class="service">
-                <div class="icon">P</div>
-                <h3>Podcast</h3>
-                <p>
-                    Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    Hello Hello Hello Hello Hello
-                </p>
-            </div>
-
-            <div class="service">
-                <div class="icon">M</div>
-                <h3>Merch</h3>
-                <p>
-                    Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    Hello Hello Hello Hello Hello
-                </p>
-            </div>
-        </section>
-
-        <section class="gallery">
-            <h2>Gallery</h2>
-            <img src="IMG/1.jpg" alt="" />
-            <img src="IMG/2.jpg" alt="" />
-            <img src="IMG/3.jpg" alt="" />
-            <img src="IMG/4.jpg" alt="" />
-            <img src="IMG/5.jpg" alt="" />
-            <img src="IMG/6.jpg" alt="" />
-            <img src="IMG/7.jpg" alt="" />
-            <img src="IMG/8.jpg" alt="" />
-            <img src="IMG/9.jpg" alt="" />
-            <img src="IMG/10.jpg" alt="" />
-            <img src="IMG/11.jpg" alt="" />
-            <img src="IMG/12.jpg" alt="" />
-        </section>
-
+    <!-- Navigasi -->
+    <div class="navbar">
+      <nav class="menu">
+        <ul class="list-item">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Educations</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav ul');
+    <!-- End Navigasi -->
 
-        menuToggle.addEventListener('click', function () {
-            nav.classList.toggle('slide');
-        });
-    </script>
+  <!-- Main -->
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="hero">
+        <h2 class="heading">Portfolio</h2>
+      </div>
+
+      <div class="about">
+        <h4>Hello!</h4>
+        <h4>I'm <span>Yoga</span>,</h4>
+        <h6>Electrical Engineering Fresh Graduate and Beginner Programmer.</h6>
+        <p>I'm a realistic person in looking at something or about probrlems that I'm dealing with. I like to try new things that I have never done before, as long as they are not dangerous and violate existing rules. I am a person who is quite creative in doing and completing the things I am working on. I like to look for references to something I'm working on, so that it helps me see things that I didn't think of. I am a person who is quite sociable and easy to work with, because working with a team is more fun.</p>
+        <ul>
+          <li><a href="#">Download Resume</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="twoColumn">
+    <!-- Educations -->
+    <section class="educations">
+      <h1>Educations</h1>
+      <ul>
+        <li>2016 - 2020 : Tarumanagara University - Electrical Engineering</li>
+        <li>2013 - 2016 : Maria Mediatrix High Schools</li>
+      </ul>
+    </section>   
+    <!-- End ducations -->
+
+    <!-- Project -->
+    <section class="project">
+      <h1>Project</h1>
+      <h3>Hardware Programming</h3>
+      <ul>
+        <li><a href="">Bedroom (IOT)</a></li>
+        <li><a href="">Smart Toilet</a></li>
+        <li><a href="">Wheeled Robot With Table Corner Detector</a></li>
+        <li><a href="">Smart Warehouse Gross Sales</a></li>
+        <li><a href="">Locker Rental With Barcode Payment</a></li>
+        <li><a href="">Disabilities Get Out Helper At Swimming Pool</a></li>
+      </ul>
+    </section>
+    <!-- End Project -->
+    </div>
+
+    <!-- Section -->
+    <section class="sections">
+      <!-- Skill -->
+      <h1>Skills</h1>
+      <div class="box-skills">
+        <div class="skills">
+          <div class="icon">HTML</div>
+          <img src="img/b4.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">CSS</div>
+          <img src="img/b4.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">Javascript</div>
+          <img src="img/b4.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">Java</div>
+          <img src="img/b3.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">Python</div>
+          <img src="img/b3.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">C</div>
+          <img src="img/b3.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">C++</div>
+          <img src="img/b3.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">C#</div>
+          <img src="img/b3.png" alt="">
+        </div>
+
+        <div class="skills">
+          <div class="icon">DBMS</div>
+          <img src="img/b2.png" alt="">
+        </div>
+
+        
+        <!-- End Skill -->
+      </div>
+      
+    </section>
+    <!-- End Section -->
+
+    <!-- Contact -->
+    <div class="contacts">
+      <div class="contact">
+        <h1>Contact : </h1>
+
+        <div class="github">
+          <img src="img/github.png" alt="">
+          <h3><a href="https://github.com/yosan27" target="_blank">Github</a></h3>
+        </div>
+        <div class="ig">
+          <img src="img/ig.png" alt="">
+          <h3><a href="https://instagram.com/yogasantoso27" target="_blank">Instagram</a></h3>
+        </div>
+        <div class="gmail">
+          <img src="img/gmail.png" alt="">
+          <h3><a href="https://gmail.com" target="_blank">Email   : yoga.525160026@gmail.com</a></h3>
+        </div>
+        
+      </div>
+    </div>
+    <!-- End Contact -->
+  </div>
+<!-- End Main -->
+
+<!-- Footer -->
+<footer class="footer">
+  <p>2020 All Right Reserved by Yoga.</p>
+</footer>
+<!-- End Footer -->
+
 </body>
+
 </html>
